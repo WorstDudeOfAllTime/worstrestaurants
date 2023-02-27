@@ -1,0 +1,14 @@
+.displayCard{
+  height: 100%;
+  width: 20%;
+  color: black;
+  text-align: center;
+  margin: 0px 40px;
+}
+.displayCard h2{
+  margin: 10px;
+}
+.displayCard h4{
+  font-size: 13px;
+  margin-bottom: 5px;
+}

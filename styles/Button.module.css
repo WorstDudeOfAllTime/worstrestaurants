@@ -1,0 +1,31 @@
+.buttonStyle {
+  width: 150px;
+  height: 50px;
+  background: white;
+  border: 3px solid black;
+  color: black;
+  justify-content: space-around;
+  border-radius: 8px;
+  margin: 0px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease-in-out .1s;
+}
+.buttonStyle:hover{
+  border: 5px solid black;
+}
+.buttonStyle:hover .icon{
+  animation: shakeIcon;
+  animation-duration: .5s;
+}
+@keyframes shakeIcon {
+  0% {
+    rotate: -15deg;
+  }
+  50% {
+    rotate: 15deg;
+  }
+  100% {
+    rotate: -15deg;
+  }
+}

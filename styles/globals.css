@@ -81,7 +81,8 @@
 
 html,
 body {
-  max-width: 100vw;
+  height: 100vh;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -98,6 +99,18 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.flexCent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexCentCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (prefers-color-scheme: dark) {
