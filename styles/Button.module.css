@@ -6,7 +6,6 @@
   color: black;
   justify-content: space-around;
   border-radius: 8px;
-  margin: 0px 40px;
   font-weight: bold;
   cursor: pointer;
   transition: all ease-in-out .1s;
@@ -20,12 +19,18 @@
 }
 @keyframes shakeIcon {
   0% {
-    rotate: -15deg;
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 15deg;
   }
   50% {
+    rotate: -15deg;
+  }
+  75% {
     rotate: 15deg;
   }
   100% {
-    rotate: -15deg;
+    rotate: 0deg;
   }
 }

@@ -1,0 +1,15 @@
+.categoryContainer {
+  color :black;
+  margin: 0px 25px;
+  transition: all ease-in-out .05s;
+  cursor: pointer;
+}
+.categoryContainer:hover{
+  filter: drop-shadow(1px 1px 3px rgba(0,0,0, .3));
+}
+.categoryContainer:hover .categoryImage {
+  transform: rotate(3deg);
+}
+.categoryContainer h3{
+  text-align: center;
+}

@@ -101,7 +101,7 @@ a {
   text-decoration: none;
 }
 
-.flexCent{
+.flexCent {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,5 +116,13 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

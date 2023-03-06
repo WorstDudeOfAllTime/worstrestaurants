@@ -12,6 +12,7 @@ import pizza from './../components/images/icons8-salami-pizza-50.png';
 import wine from './../components/images/icons8-food-and-wine-50.png';
 import Button from './../components/Button';
 import SignIn from './../components/SignIn';
+import Link from 'next/link';
 const crimson = Crimson_Pro({ subsets: ['latin'] });
 
 export default function Home() {
@@ -28,14 +29,16 @@ export default function Home() {
       </Head>
       <main className={`flexCent ${crimson.className} ${styles.main}`}>
         <div className={`flexCent ${styles.restaurantLink}`}>
-          <h1>
-            See<br></br> Our<br></br> Restaurants!
-          </h1>
+          <Link href="/restaurants">
+            <h1>
+              See<br></br> Our<br></br> Restaurants!
+            </h1>
+          </Link>
         </div>
         <div className={styles.container}>
           <div className={styles.leftHalf}>
             <section className={`flexCent ${styles.logoSection}`}>
-              <Image src={logo} width={500} />
+              <Image src={logo} width={600} />
             </section>
             <section className={`flexCent ${styles.cardSection}`}>
               <FPDisplayCard
@@ -61,17 +64,11 @@ export default function Home() {
               />
             </section>
             <section className={`flexCent ${styles.buttonSection}`}>
-              <Button
-                clickFunc={setSignIn}
-                icon={pizza}
-                text="sign in"
-              ></Button>
-              <Button clickFunc={setSignUp} icon={wine} text="sign up"></Button>
+              <Button margin={40} clickFunc={setSignIn} icon={pizza} text="sign up" />
+              <Button margin={40} clickFunc={setSignUp} icon={wine} text="sign in" />
             </section>
           </div>
-          <div
-            className={`flexCent ${styles.rightHalf}`}
-          >
+          <div className={`flexCent ${styles.rightHalf}`}>
             {signIn && <SignIn />}
           </div>
         </div>
